@@ -12,7 +12,8 @@ const members = [
     gender: 'M',
     story: "I’m dami, a Machine Learning Engineer. I work with Python and sometimes R. I usually prefer that the D in my name starts with lower case. Other than that, I have absolutely no other fun fact about myself that comes to mind👀",
     role: "data",
-    title: 'ML Engineer'
+    title: 'ML Engineer',
+    resume_name: 'dami.pdf' //resume file name in folder
   },//dami
   {
     name: "Seun Philip",
@@ -51,8 +52,7 @@ const members = [
     id: 6,
     gender: "F",
     story: "She lurks in the shadows, with her gaaaang signs and anti-anime slurs, waiting for that weeb to be the first to say 'Arigatou'. Say that magic word, and ... and ... Say it and see for yourself.",
-    role: "design",
-    title: "UI/UX Designer"
+    role: "design"
   },//nini
 
 ];
@@ -69,6 +69,7 @@ members.forEach(member => {
           </div>
           <div class = "bio">
             ${member.story}
+            <a href='resumes/${member.resume_name}' class='resume' target='blank'>Resume➡</a>
           </div>
         </div>
       `;
