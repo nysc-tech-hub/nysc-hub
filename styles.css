@@ -5,8 +5,24 @@
   /* border: 1px solid red */
   }
   
+  :root {
+      --bgC : #0F110C;
+      --sideC : #ffffff;
+      --instrC : #202020;
+      --titleC : #555;
+      --bioC : #F9EAE1;
+      --designC : #dfeb00;
+      --webC : #3F88C5;
+      --specialC : #06ba3f;
+      --dataC : #9B5094;
+      --mobileC : #E94F37;
+      --wholeC : #eeeee1;
+      --shuffleC : yellow;
+      --shuffleTextC : #303030;
+  }
+
   body {
-    background-color: #303030;
+    background-color: var(--bgC);
   }
   
   #satellite {
@@ -18,7 +34,7 @@
   }
   
   .side {
-    background-color: #ffffff;
+    background-color: var(--sideC);
     border-radius: 4px;
     display: inline-flex;
     flex-direction: column;
@@ -32,14 +48,15 @@
   
   .instructions p{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: left;
     padding: 0px 20px;
     font-family: 'Hind Madurai';
   }
   
   #instr {
-    color: #202020;
+    color: var(--instrC);
+    font-size: 2rem;
     /* font-weight:bold; */
   }
   
@@ -61,21 +78,7 @@
     }
   }
   
-  /* .circle {
-    background: #d92128;
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-  } */
-  
-  /* #white {
-    width: 26px;
-    height: 26px;
-    position: relative;
-    left: 20px;
-    top: 18px;
-    background: #ffffff;
-  } */
+
   
   .logo{
     margin: 0 auto;
@@ -99,7 +102,7 @@
   }
   
   .card {
-    background: #ffffff;
+    background: var(--sideC);
     padding: 18px;
     border-radius: 13px;
     display: grid;
@@ -112,15 +115,15 @@
       width: 3rem;
   }
 
-  .reve {
+  .title {
     font-size: 0.7rem;
-    color: #999999;
+    color: var(--titleC);
     font-weight: 300;
   }
   
-  .invisible {
+  .bio {
     margin : 8px auto 8px auto;
-    background: #ddd;
+    background: var(--bioC);
     padding: 18px;
     border-radius: 13px;
     font-family: 'Hind Madurai';
@@ -133,7 +136,7 @@
   right: 25px;
   top: 8px;
   display: inline;
-  background: #eeeee1;
+  background: var(--sideC);
   border-radius: 4px;
   z-index: 30;
   font-family: "Hind Madurai", sans-serif;
@@ -148,66 +151,65 @@
   padding: 2px 4px;
   margin: 8px 9px;
   border-radius: 4px;
-  border: 1px solid #999999;
+  border: 1px solid var(--bgC);
   cursor: pointer;
   }
   
   .button:hover{
-  background: #999999;
+  background: var(--titleC);
   }
   
   .button.active{
-  background: #999999;
+  background: var(--bgC);
   color: white;
   }
   
   .design.card {
-  border-left:6px solid #dfeb00; 
+  border-left:6px solid var(--designC); 
   }
   
   .web.card {
-  border-left:6px solid #00e8e8;
+  border-left:6px solid var(--webC);
   }
   
   .special.card {
-  border-left:6px solid #06ba3f;
+  border-left:6px solid var(--specialC);
   }
   
   .data.card {
-  border-left:6px solid #ba063f;
+  border-left:6px solid var(--dataC);
   }
 
   .mobile.card {
-    border-left:6px solid coral;
+    border-left:6px solid var(--mobileC);
     }
   
   #designButton {
-  border-left:6px solid #dfeb00; 
+  border-left:6px solid var(--designC); 
   }
   
   #webButton {
-  border-left:6px solid #00e8e8;
+  border-left:6px solid var(--webC);
   }
   
   #specialButton {
-  border-left:6px solid #06ba3f;
+  border-left:6px solid var(--specialC);
   }
   
-  #dsButton {
-  border-left:6px solid #ba063f;
+  #dataButton {
+  border-left:6px solid var(--dataC);
   }
 
   #mobileButton {
       border-left: 6px solid coral;
   }
-  /* #06ba3f */
   
   #whole {
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background: #eeeee1;
+    background: var(--wholeC);
     padding: 1rem 1rem;
     justify-content: flex-end;
   }
@@ -231,13 +233,13 @@
     width: 60%;
     box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.4);
     text-transform: uppercase;
-    background: yellow;
+    background: var(--shuffleC);
     font-family: "Montserrat", sans-serif;
     font-size: 0.9rem;
     margin-bottom: 6rem;
     padding: 0.5rem 0.8rem;
     cursor: pointer;
-    color: #303030;
+    color: var(--shuffleTextC);
   border-radius: 0.3rem;
   }
   

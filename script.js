@@ -37,7 +37,7 @@ const members = [
     story: "Owner of the only characteristic pants in all the seven kingdoms, Tomiwa is proud to have us mortals gaze on them. Plus, there's something with her and balloons. Ask Pennywise.🤷‍♀️",
     role: "special",
     title: "Software Tester"
-  },//tomiwa
+  },//dara
   {
     name: "Tope",
     id: 5,
@@ -45,98 +45,14 @@ const members = [
     story: "Beast at data, Early can do everything but get to work late. Mwahahahahaha!😎 Also, one time, Early high-fived the moon and was sent to mediate between warring alien nations. Of course, he was early for that too😒.",
     role: "mobile",
     title: "Cross-Platform Developer"
-  },//early
+  },//tope
   {
     name: "Ekemini",
     id: 6,
     gender: "F",
     story: "She lurks in the shadows, with her gaaaang signs and anti-anime slurs, waiting for that weeb to be the first to say 'Arigatou'. Say that magic word, and ... and ... Say it and see for yourself.",
     role: "design"
-  },//farouq
-  {
-    name: "Eniola-chan",
-    id: 7,
-    gender: "https://img.icons8.com/color/48/000000/user-female-skin-type-4.png",
-    story: "What's that stillness in the wind, that tranquil in the office area, it is the aura of none other than Eniola, kung fu ka of Shi Fu(She'd beat Po blindfolded🚶‍♀️)",
-    role: "special"
-  },//eniola
-  {
-    name: "Gbemisola of High Garden",
-    id: 8,
-    gender: "https://img.icons8.com/color/48/000000/user-female-skin-type-4.png",
-    story: "Smiles. Smiles. Smiles. But beneath that smile, there is an undeniably sinister will to take over the known world- I just know it. Watch out, people. They'll say Dami warned you.",
-    role: "data"
-  },//gbemi
-  {
-    name: "Gboyega, a Stormtrooper",
-    id: 9,
-    gender: "https://img.icons8.com/color/48/000000/user-male-skin-type-6.png",
-    story: "Your IOS developer ain't a-millionth as dapper.",
-    role: "data"
-  },//gboyega
-  {
-    name: "Chudi the Moody",
-    id: 10,
-    gender: "https://img.icons8.com/color/48/000000/user-male-skin-type-6.png",
-    story: "His slack bio speaks for itself: software craftsman and, wait for it, <b>janitor</b>.",
-    role: "design"
-  },//chudi
-  {
-    name: "Wole the Corporate",
-    id: 11,
-    gender: "https://img.icons8.com/color/48/000000/user-male-skin-type-6.png",
-    story: "Any assassin can spot Wole from three miles away- look for his quintessentially-dark headphones and his idiosyncratic, dapper, corporate get-up. He's quadruple black belt, so no assassin should be stupid enough to look for him",
-    role: "web"
-  },//wole
-  {
-    name: "Assurance the Glued",
-    id: 12,
-    gender: "https://img.icons8.com/color/48/000000/user-male-skin-type-6.png",
-    story: "We've tried everything, even hiring ronin(we couldn't afford Keanu Reeves tho); nothing, I repeat, nothing, can take his eyes off his laptop screen.😪😫",
-    role: "design"
-  },//assurance
-  {
-    name: "Dare, SBA Saboteur",
-    id: 13,
-    gender: "https://img.icons8.com/color/48/000000/user-male-skin-type-6.png",
-    story: "He's the reason Falz gave up on the Sweet Boy association. Why, we'll never know.",
-    role: "design"
-  },//dare
-  {
-    name: "Itasoha, Light-skinned Somebori",
-    id: 14,
-    gender: "https://img.icons8.com/color/48/000000/user-female-skin-type-4.png",
-    story: "So Al-fred and Isma'il kidnapped Saint Jhn, Beyonce and the poor little Blue Ivy to remix the song specially for Itasoha. On whose orders? Itasoha's. Nobody needed WizKid. He didn't even write his part.🙄",
-    role: "special"
-  },//itasoha
-  {
-    name: "Kareem, the Dream",
-    id: 15,
-    gender: "https://img.icons8.com/color/48/000000/user-male-skin-type-6.png",
-    story: "In a proper coding-shinobi-niceness triathlon, who do you think would win- Kareem or the other guy?",
-    role: "design"
-  },//kareem
-  {
-    name: "Chukwudi T9000",
-    id: 16,
-    gender: "https://img.icons8.com/color/48/000000/user-male-skin-type-6.png",
-    story: "From a long line of terminators comes Chukwudi, a very nasty message for John Connor hidden in the most hidden of his hidden files.",
-    role: "design"
-  },//chukwudi
-  {
-    name: "A Time-traveller Called Isma'il",
-    id: 17,
-    gender: "https://img.icons8.com/color/48/000000/user-male-skin-type-6.png",
-    story: "Rogue time-traveller and defender of all things green, plus illustrator plus rogue time-traveller and defender of all things green. Ooops! THAT WAS A TIME LOOP. I see what he did there.",
-    role: 'special'
-  },//ismail
-  {
-    name: "Front-end Kayode",
-    id: 18,
-    gender: "https://img.icons8.com/color/48/000000/user-male-skin-type-6.png",
-    story: "He beats our logs hands down and then consoles them. He is also a hypnotist with an expertise in DOM manipulation. Don't mess with this guy.",
-    role: 'design'
-  },//kayode
+  },//nini
 
 ];
 
@@ -150,7 +66,7 @@ members.forEach(member => {
           <div>${member.gender==='M' ? male_avi : female_avi}</div>
           <div class = "name">${member.name}</div>
           </div>
-          <div class = "invisible">
+          <div class = "bio">
             ${member.story}
           </div>
         </div>
@@ -178,7 +94,7 @@ for(i= 0; i < elements.length; i++){
   //perfect lines below
   u.onmouseover = function(){
     u.lastElementChild.style.display = 'block';
-    u.firstElementChild.lastElementChild.innerHTML = `<span class = "reve">Title:</span><br>${title}`;
+    u.firstElementChild.lastElementChild.innerHTML = `<span class = "title">Title</span><br>${title}`;
   };
 
   u.onmouseleave = function(){
@@ -205,7 +121,7 @@ for(i= 0; i < elements.length; i++){
 }
 
 let allButton = document.getElementById("allButton");
-let dsButton = document.getElementById("dsButton");
+let dataButton = document.getElementById("dataButton");
 let designButton = document.getElementById("designButton");
 let specialButton = document.getElementById("specialButton");
 let webButton = document.getElementById("webButton");
@@ -226,11 +142,12 @@ function showElements(arr) {
 //when you click the 'all' button, change the background and color of it and reveal all hidden cards
 
 allButton.onclick = function(){
-  dsButton.className = "button";
+  dataButton.className = "button";
   allButton.className = "button active";
   designButton.className = "button";
   specialButton.className = "button";
   webButton.className = "button";
+  mobileButton.className = "button";
   showElements(data_people);
   showElements(web_devs);
   showElements(specials);
@@ -239,12 +156,13 @@ allButton.onclick = function(){
 }
 
 //when you click any of the roke filter buttons, change the background and color of it, reveal only that card and hide all other role cards
-dsButton.onclick = function(){
-  dsButton.className = "button active";
+dataButton.onclick = function(){
+  dataButton.className = "button active";
   allButton.className = "button";
   designButton.className = "button";
   specialButton.className = "button";
   webButton.className = "button";
+  mobileButton.className = "button";
   hideElements(web_devs);
   hideElements(specials);
   hideElements(design_people);
@@ -253,11 +171,12 @@ dsButton.onclick = function(){
 }
 
 designButton.onclick = function(){
-  dsButton.className = "button";
+  dataButton.className = "button";
   allButton.className = "button";
   designButton.className = "button active";
   specialButton.className = "button";
   webButton.className = "button";
+  mobileButton.className = "button";
   hideElements(web_devs);
   hideElements(specials);
   hideElements(data_people);
@@ -266,11 +185,12 @@ designButton.onclick = function(){
 }
 
 specialButton.onclick = function(){
-  dsButton.className = "button";
+  dataButton.className = "button";
   allButton.className = "button";
   designButton.className = "button";
   specialButton.className = "button active";
   webButton.className = "button";
+  mobileButton.className = "button";
   hideElements(web_devs);
   hideElements(data_people);
   hideElements(design_people);
@@ -279,11 +199,12 @@ specialButton.onclick = function(){
 }
 
 webButton.onclick = function(){
-  dsButton.className = "button";
+  dataButton.className = "button";
   allButton.className = "button";
   designButton.className = "button";
   specialButton.className = "button";
   webButton.className = "button active";
+  mobileButton.className = "button";
   hideElements(data_people);
   hideElements(specials);
   hideElements(design_people);
@@ -292,11 +213,12 @@ webButton.onclick = function(){
 }
 
 mobileButton.onclick = function(){
-    dsButton.className = "button";
+    dataButton.className = "button";
     allButton.className = "button";
     designButton.className = "button";
     specialButton.className = "button";
-    webButton.className = "button active";
+    webButton.className = "button";
+    mobileButton.className = "button active";
     hideElements(data_people);
     hideElements(specials);
     hideElements(design_people);
