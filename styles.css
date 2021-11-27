@@ -282,3 +282,7 @@
      align-items: center;
    }
    
+a.resume {
+    display: block;
+    text-decoration: none;
+}
