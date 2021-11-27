@@ -51,7 +51,8 @@ const members = [
     id: 6,
     gender: "F",
     story: "She lurks in the shadows, with her gaaaang signs and anti-anime slurs, waiting for that weeb to be the first to say 'Arigatou'. Say that magic word, and ... and ... Say it and see for yourself.",
-    role: "design"
+    role: "design",
+    title: "UI/UX Designer"
   },//nini
 
 ];
